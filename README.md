@@ -4,6 +4,14 @@ Game berbasis grid 2D yang dibuat dengan **LibGDX** (frontend) dan **Spring Boot
 
 ---
 
+## Play Online
+
+Tersedia di itch.io, tidak perlu install apapun:
+
+**[https://nadizzati.itch.io/campusdash](https://nadizzati.itch.io/campusdash)**
+
+---
+
 ## Struktur Project
 
 ```
