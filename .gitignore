@@ -1,0 +1,5 @@
+.idea/
+*.exe
+*.jar
+*.json
+FE-OOP/output/
