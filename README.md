@@ -23,7 +23,7 @@ FE-OOP/
 │   ├── strategy/        # MovementStrategy & implementasinya
 │   ├── state/           # DoorContext, DoorState
 │   ├── command/         # InputHandler, Command
-│   ├── screen/          # GameScreen, MainMenuScreen, GameOverScreen, LeaderboardScreen
+│   ├── screen/          # GameScreen, MainMenuScreen, GameOverScreen, LeaderboardScreen, SplashScreen, TutorialScreen
 │   ├── ui/              # HUD
 │   ├── manager/         # SoundManager
 │   ├── network/         # ApiClient
@@ -94,7 +94,7 @@ Atau lewat IntelliJ: Run konfigurasi `Lwjgl3Launcher`.
 | `GRID_COLS` | 24 | Jumlah kolom map |
 | `GRID_ROWS` | 16 | Jumlah baris map |
 | `COINS_TO_WIN` | 20 | Koin yang dibutuhkan untuk menang |
-| `GAME_TIME_SEC` | 120 | Waktu permainan (detik) |
+| `GAME_TIME_SEC` | 90 | Waktu permainan (detik) |
 | `TIME_PENALTY` | 10 | Penalti waktu saat kena enemy |
 | `PLAYER_SPEED` | 5.0 | Kecepatan player (tile/detik) |
 | `ENEMY_SPEED` | 2.5 | Kecepatan enemy (tile/detik) |
