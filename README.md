@@ -102,7 +102,7 @@ Atau lewat IntelliJ: Run konfigurasi `Lwjgl3Launcher`.
 ### Sistem Koin (Object Pooling)
 - Hanya 10 koin aktif di map dalam satu waktu
 - Saat koin diambil, objek yang sama di-reuse dan dipindahkan ke posisi baru
-- Tidak ada `new Coin()` saat respawn — lebih hemat memori
+- Tidak ada `new Coin()` saat respawn, lebih hemat memori
 
 ### Tile Types
 
