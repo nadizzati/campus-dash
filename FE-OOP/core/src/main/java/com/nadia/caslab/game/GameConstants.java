@@ -17,8 +17,8 @@ public final class GameConstants {
     public static final int VIEWPORT_HEIGHT = MAP_HEIGHT;
 
     // Gameplay
-    public static final int COINS_TO_WIN    = 3;   // koin yang dibutuhkan buka pintu
-    public static final int GAME_TIME_SEC   = 90;  // 1.30 menit countdown
+    public static final int COINS_TO_WIN    = 20;   // koin yang dibutuhkan buka pintu
+    public static final int GAME_TIME_SEC   = 90;   // 1.30 menit countdown
     public static final int TIME_PENALTY    = 10;   // detik dikurangi jika kena enemy
     public static final float PLAYER_SPEED  = 4.0f; // tile per detik
     public static final float ENEMY_SPEED   = 2.5f; // tile per detik
