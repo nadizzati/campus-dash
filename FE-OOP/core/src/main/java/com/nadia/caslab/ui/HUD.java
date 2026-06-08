@@ -47,7 +47,7 @@ public class HUD implements GameObserver {
     @Override
     public void onDoorUnlocked() {
         this.doorUnlocked = true;
-        showNotification("Pintu Lab TERBUKA! Segera masuk!");
+        showNotification("Pintu Lab Terbuka! Segera masuk!");
     }
 
     @Override

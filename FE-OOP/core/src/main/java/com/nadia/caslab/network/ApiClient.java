@@ -98,4 +98,25 @@ public class ApiClient {
             });
         } catch (Exception e) { if(callback!=null) callback.onFailure(e.getMessage()); }
     }
+
+    public static void loginUser(String username, String password, ApiCallback callback) {
+        if (!BACKEND_ENABLED) {
+            String dummy = "{\"idStudent\":1,\"username\":\"" + username + "\",\"totalKoinTerkumpul\":0}";
+            if (callback != null) callback.onSuccess(dummy);
+            return;
+        }
+        String json = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}";
+        postJson(BASE_URL + "/students/login", json, callback);
+    }
+
+    public static void registerUser(String username, String password, ApiCallback callback) {
+        if (!BACKEND_ENABLED) {
+            String dummy = "{\"idStudent\":1,\"username\":\"" + username + "\",\"totalKoinTerkumpul\":0}";
+            if (callback != null) callback.onSuccess(dummy);
+            return;
+        }
+        String json = "{\"username\":\"" + username + "\",\"password\":\"" + password + "\"}";
+        postJson(BASE_URL + "/students/register", json, callback);
+    }
+
 }

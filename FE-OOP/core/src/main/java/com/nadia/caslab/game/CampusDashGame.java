@@ -4,8 +4,8 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.nadia.caslab.manager.SoundManager;
-import com.nadia.caslab.screen.MainMenuScreen;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.nadia.caslab.screen.SplashScreen;
 
 //Class utama
 public class CampusDashGame extends Game {
@@ -26,7 +26,7 @@ public class CampusDashGame extends Game {
         SoundManager.getInstance().init();
 
         // Tampilkan main menu pertama kali
-        setScreen(new MainMenuScreen(this));
+        setScreen(new SplashScreen(this));
     }
 
     @Override

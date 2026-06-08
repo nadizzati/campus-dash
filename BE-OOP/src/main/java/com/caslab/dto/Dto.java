@@ -92,4 +92,11 @@ public class Dto {
             return new ApiResponse<>(false, message, null);
         }
     }
+
+    // Login Request
+    @Data @NoArgsConstructor @AllArgsConstructor
+    public static class LoginRequest {
+        private String username;
+        private String password;
+    }
 }

@@ -28,6 +28,17 @@ public class StudentAccountController {
         }
     }
 
+    // POST /api/students/login - Login akun
+    @PostMapping("/login")
+    public ResponseEntity<ApiResponse<StudentResponse>> login(@RequestBody LoginRequest req) {
+        try {
+            StudentResponse data = studentService.login(req);
+            return ResponseEntity.ok(ApiResponse.ok("Login berhasil.", data));
+        } catch (IllegalArgumentException e) {
+            return ResponseEntity.badRequest().body(ApiResponse.error(e.getMessage()));
+        }
+    }
+
     // GET /api/students - Semua akun
     @GetMapping
     public ResponseEntity<ApiResponse<List<StudentResponse>>> getAll() {
