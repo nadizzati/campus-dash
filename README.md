@@ -179,4 +179,4 @@ curl http://localhost:8080/api/students/leaderboard
 
 Frontend terhubung ke backend via `ApiClient.java`. Pastikan backend berjalan di `localhost:8080` sebelum menjalankan game.
 
-Jika backend tidak tersedia, game tetap bisa dimainkan dalam **mode offline** — sesi tidak akan tersimpan ke database.
+Jika backend tidak tersedia, game tetap bisa dimainkan dalam **mode offline**, sesi tidak akan tersimpan ke database.
