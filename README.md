@@ -23,7 +23,7 @@ FE-OOP/
 │   ├── strategy/        # MovementStrategy & implementasinya
 │   ├── state/           # DoorContext, DoorState
 │   ├── command/         # InputHandler, Command
-│   ├── screen/          # GameScreen, MainMenuScreen, GameOverScreen, LeaderboardScreen
+│   ├── screen/          # GameScreen, MainMenuScreen, GameOverScreen, LeaderboardScreen, SplashScreen, TutorialScreen
 │   ├── ui/              # HUD
 │   ├── manager/         # SoundManager
 │   ├── network/         # ApiClient
