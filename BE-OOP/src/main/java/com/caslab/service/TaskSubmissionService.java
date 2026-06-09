@@ -34,7 +34,6 @@ public class TaskSubmissionService {
                 .statusTugas(StatusTugas.IN_PROGRESS)
                 .waktuTersisa(300) // 5 menit default
                 .koinDikumpulkan(0)
-                .level(1)
                 .build();
 
         TaskSubmission saved = taskRepo.save(sesi);
@@ -54,13 +53,11 @@ public class TaskSubmissionService {
                 .orElseGet(() -> TaskSubmission.builder()
                         .student(student)
                         .koinDikumpulkan(0)
-                        .level(1)
                         .build());
 
         sesi.setStatusTugas(req.getStatusTugas());
         sesi.setWaktuTersisa(req.getWaktuTersisa());
         sesi.setKoinDikumpulkan(req.getKoinDikumpulkan());
-        sesi.setLevel(req.getLevel());
         sesi.setFinishedAt(LocalDateTime.now());
 
         TaskSubmission saved = taskRepo.save(sesi);
@@ -106,7 +103,6 @@ public class TaskSubmissionService {
                 .statusTugas(t.getStatusTugas())
                 .waktuTersisa(t.getWaktuTersisa())
                 .koinDikumpulkan(t.getKoinDikumpulkan())
-                .level(t.getLevel())
                 .createdAt(t.getCreatedAt())
                 .finishedAt(t.getFinishedAt())
                 .build();

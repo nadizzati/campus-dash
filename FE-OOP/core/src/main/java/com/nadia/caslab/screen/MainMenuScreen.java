@@ -153,14 +153,17 @@ public class MainMenuScreen implements Screen {
             selectedOption = (selectedOption + 1) % MENU_ITEMS.length;
 
         if (Gdx.input.isKeyJustPressed(Input.Keys.ENTER) || Gdx.input.isKeyJustPressed(Input.Keys.SPACE)) {
-            if (selectedOption == 0) {
-                game.setScreen(new TutorialScreen(game));
-            } else if (selectedOption == 1) {
-                game.setScreen(new LeaderboardScreen(game));
-            } else {
-                Gdx.app.exit();
+            switch (selectedOption) {
+                case 0:
+                    game.setScreen(new TutorialScreen(game));
+                    break;
+                case 1:
+                    game.setScreen(new LeaderboardScreen(game));
+                    break;
+                case 2:
+                    Gdx.app.exit();
+                    break;
             }
-            Gdx.app.postRunnable(this::dispose);
         }
     }
 

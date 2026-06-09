@@ -36,9 +36,6 @@ public class TaskSubmission {
     @Column(name = "koin_dikumpulkan")
     private Integer koinDikumpulkan = 0;
 
-    @Column(name = "level")
-    private Integer level = 1;
-
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
@@ -49,6 +46,5 @@ public class TaskSubmission {
     protected void onCreate() {
         createdAt = LocalDateTime.now();
         if (koinDikumpulkan == null) koinDikumpulkan = 0;
-        if (level == null) level = 1;
     }
 }

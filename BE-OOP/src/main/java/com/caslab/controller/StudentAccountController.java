@@ -66,7 +66,7 @@ public class StudentAccountController {
         }
     }
 
-    // GET /api/students/leaderboard - Leaderboard top koin
+    // GET /api/students/leaderboard - Leaderboard top skor
     @GetMapping("/leaderboard")
     public ResponseEntity<ApiResponse<List<LeaderboardEntry>>> leaderboard() {
         return ResponseEntity.ok(ApiResponse.ok("OK", studentService.getLeaderboard()));

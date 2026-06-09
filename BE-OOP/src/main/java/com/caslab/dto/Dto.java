@@ -22,16 +22,7 @@ public class Dto {
         private StatusTugas statusTugas;
         private Integer waktuTersisa;
         private Integer koinDikumpulkan;
-        private Integer level;
     }
-
-    // Request beli item dari shop
-    @Data @NoArgsConstructor @AllArgsConstructor @Builder
-    public static class BuyItemRequest {
-        private Long idStudent;
-        private Long idItem;
-    }
-
 
     // Response data akun mahasiswa
     @Data @NoArgsConstructor @AllArgsConstructor @Builder
@@ -54,17 +45,6 @@ public class Dto {
         private Integer level;
         private LocalDateTime createdAt;
         private LocalDateTime finishedAt;
-    }
-
-    // Response item shop
-    @Data @NoArgsConstructor @AllArgsConstructor @Builder
-    public static class ItemShopResponse {
-        private Long idItem;
-        private String namaItem;
-        private String deskripsi;
-        private Integer hargaKoin;
-        private String efekItem;
-        private Boolean isAvailable;
     }
 
     // Response entry leaderboard

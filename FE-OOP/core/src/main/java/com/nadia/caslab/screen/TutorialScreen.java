@@ -175,8 +175,8 @@ public class TutorialScreen implements Screen {
 
         bodyFont.setColor(Color.WHITE);
         bodyFont.draw(game.batch, "- Hit enemy: -" + GameConstants.TIME_PENALTY + "s penalty", rightColumnX, topRowY - 32);
-        bodyFont.draw(game.batch, "- Collect " + GameConstants.COINS_TO_WIN + " coins to unlock", rightColumnX, topRowY - 57);
-        bodyFont.draw(game.batch, "- Enter gold door to WIN!", rightColumnX, topRowY - 82);
+        bodyFont.draw(game.batch, "- Collect " + GameConstants.COINS_TO_WIN + " coins to unlock door", rightColumnX, topRowY - 57);
+        bodyFont.draw(game.batch, "- Enter door to WIN!", rightColumnX, topRowY - 82);
         bodyFont.draw(game.batch, "- Time runs out = LOSE!", rightColumnX, topRowY - 107);
 
         sectionFont.setColor(new Color(0.9f, 0.8f, 0.6f, 1f));

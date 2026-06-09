@@ -37,9 +37,6 @@ public class StudentAccount {
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<TaskSubmission> taskSubmissions;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<StudentItem> studentItems;
-
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
