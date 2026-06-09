@@ -201,13 +201,6 @@ mvn spring-boot:run
 | POST | /api/sessions/submit | Submit hasil game |
 | GET | /api/sessions/history/{id} | Riwayat sesi |
 
-#### Item Shop
-| Method | URL | Keterangan |
-|--------|-----|------------|
-| GET | /api/items | Daftar item |
-| POST | /api/items/buy | Beli item |
-| GET | /api/items/student/{id} | Item milik mahasiswa |
-
 ### Test Cepat
 ```bash
 # Registrasi
