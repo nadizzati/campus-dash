@@ -16,33 +16,79 @@ Tersedia di itch.io, tidak perlu install apapun:
 
 ```
 FE-OOP/
+├── assets/
 ├── core/src/main/java/com/nadia/caslab/
-│   ├── entity/          # Player, Enemy, Coin, TileMap
-│   ├── factory/         # CoinFactory
-│   ├── observer/        # GameEventManager, GameObserver
-│   ├── strategy/        # MovementStrategy & implementasinya
-│   ├── state/           # DoorContext, DoorState
-│   ├── command/         # InputHandler, Command
-│   ├── screen/          # GameScreen, MainMenuScreen, GameOverScreen, LeaderboardScreen, SplashScreen, TutorialScreen
-│   ├── ui/              # HUD
-│   ├── manager/         # SoundManager
-│   ├── network/         # ApiClient
-│   └── game/            # CampusDashGame, GameConstants
-│
+│   ├── entity/
+│   │   ├── Player.java
+│   │   ├── Enemy.java
+│   │   ├── Coin.java
+│   │   └── TileMap.java
+│   ├── factory/
+│   │   └── CoinFactory.java
+│   ├── observer/
+│   │   ├── GameEventManager.java
+│   │   └── GameObserver.java
+│   ├── strategy/
+│   │   ├── MovementStrategy.java
+│   │   ├── RandomMovementStrategy.java
+│   │   ├── PatrolMovementStrategy.java
+│   │   └── ChaseMovementStrategy.java
+│   ├── state/
+│   │   ├── DoorContext.java
+│   │   └── DoorState.java
+│   ├── command/
+│   │   ├── Command.java
+│   │   ├── MoveCommands.java
+│   │   └── InputHandler.java
+│   ├── screen/
+│   │   ├── SplashScreen.java
+│   │   ├── LoginScreen.java
+│   │   ├── MainMenuScreen.java
+│   │   ├── TutorialScreen.java
+│   │   ├── GameScreen.java
+│   │   ├── GameOverScreen.java
+│   │   └── LeaderboardScreen.java
+│   ├── ui/
+│   │   └── HUD.java
+│   ├── manager/
+│   │   └── SoundManager.java
+│   ├── network/
+│   │   └── ApiClient.java
+│   └── game/
+│       ├── CampusDashGame.java
+│       └── GameConstants.java
+├── lwjgl3/src/main/java/com/nadia/caslab/lwjgl3/
+│   ├── Lwjgl3Launcher.java
+│   └── StartupHelper.java
+├── build.gradle
+├── settings.gradle
+├── gradle.properties
+└── README.md
+
 BE-OOP/
 ├── src/main/java/com/caslab/
-│   ├── config/          # GlobalExceptionHandler
-│   ├── controller/      # ItemShopController, StudentAccountController, TaskSubmissionController
-│   ├── dto/             # Dto
-│   ├── entity/          # ItemShop, StudentAccount, StudentItem, TaskSubmission
-│   ├── repository/      # ItemShopRepository, StudentAccountRepository, StudentItemRepository, TaskSubmissionRepository
-│   ├── service/         # ItemShopService, StudentAccountService, TaskSubmissionService
+│   ├── config/
+│   │   └── GlobalExceptionHandler.java
+│   ├── controller/
+│   │   ├── StudentAccountController.java
+│   │   └── TaskSubmissionController.java
+│   ├── dto/
+│   │   └── Dto.java
+│   ├── entity/
+│   │   ├── StudentAccount.java
+│   │   └── TaskSubmission.java
+│   ├── repository/
+│   │   ├── StudentAccountRepository.java
+│   │   └── TaskSubmissionRepository.java
+│   ├── service/
+│   │   ├── StudentAccountService.java
+│   │   └── TaskSubmissionService.java
 │   └── CampusDashApplication.java
 ├── src/main/resources/
 │   └── application.properties
 ├── pom.xml
 └── README.md
-│
+
 database/
 └── schema.sql
 ```
@@ -58,7 +104,7 @@ database/
 | Factory Method | `CoinFactory` | Spawn koin dengan posisi valid dan distribusi merata |
 | State | `DoorContext`, `LockedState`, `OpenState` | Pintu lab berubah state saat koin cukup |
 | Command | `InputHandler`, `Command` | Input player dikemas sebagai command object |
-| Singleton | `SoundManager` | Satu instance audio manager untuk seluruh game |
+| Template Method | `GameScreen`, `MainMenuScreen`, `LeaderboardScreen`, `TutorialScreen`, `SplashScreen` | Lifecycle screen ditentukan framework, implementasi disesuaikan tiap screen |
 
 ---
 
