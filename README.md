@@ -102,7 +102,7 @@ Atau lewat IntelliJ: Run konfigurasi `Lwjgl3Launcher`.
 ### Sistem Koin (Object Pooling)
 - Hanya 10 koin aktif di map dalam satu waktu
 - Saat koin diambil, objek yang sama di-reuse dan dipindahkan ke posisi baru
-- Tidak ada `new Coin()` saat respawn — lebih hemat memori
+- Tidak ada `new Coin()` saat respawn, lebih hemat memori
 
 ### Tile Types
 
@@ -175,8 +175,8 @@ curl http://localhost:8080/api/students/leaderboard
 
 ---
 
-## Koneksi Frontend ↔ Backend
+## Koneksi Frontend <-> Backend
 
 Frontend terhubung ke backend via `ApiClient.java`. Pastikan backend berjalan di `localhost:8080` sebelum menjalankan game.
 
-Jika backend tidak tersedia, game tetap bisa dimainkan dalam **mode offline** — sesi tidak akan tersimpan ke database.
+Jika backend tidak tersedia, game tetap bisa dimainkan dalam **mode offline**, sesi tidak akan tersimpan ke database.
