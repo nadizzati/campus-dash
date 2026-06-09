@@ -104,7 +104,7 @@ database/
 | Factory Method | `CoinFactory` | Spawn koin dengan posisi valid dan distribusi merata |
 | State | `DoorContext`, `LockedState`, `OpenState` | Pintu lab berubah state saat koin cukup |
 | Command | `InputHandler`, `Command` | Input player dikemas sebagai command object |
-| Singleton | `SoundManager` | Satu instance audio manager untuk seluruh game |
+| Template Method | `GameScreen`, `MainMenuScreen`, `LeaderboardScreen`, `TutorialScreen`, `SplashScreen` | Lifecycle screen ditentukan framework, implementasi disesuaikan tiap screen |
 
 ---
 
