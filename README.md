@@ -175,7 +175,7 @@ curl http://localhost:8080/api/students/leaderboard
 
 ---
 
-## Koneksi Frontend ↔ Backend
+## Koneksi Frontend <-> Backend
 
 Frontend terhubung ke backend via `ApiClient.java`. Pastikan backend berjalan di `localhost:8080` sebelum menjalankan game.
 
